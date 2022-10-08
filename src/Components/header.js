@@ -17,7 +17,7 @@ import Modal from 'react-bootstrap/Modal';
   const [input , setInput] = useState ({
     titre : '' ,
     Discription : '' ,
-    rating : '' ,
+    rate : '' ,
     imgUrl : '',
     id : Math.random()
   })
@@ -73,7 +73,7 @@ import Modal from 'react-bootstrap/Modal';
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Rating</Form.Label>
               <Form.Control
-                type="rating"  name = 'rating' onChange={handleChange} 
+                  name = 'rate' onChange={handleChange} 
                 
                 autoFocus
               />
