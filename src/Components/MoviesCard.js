@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
+
 import { Card } from "react-bootstrap";
 import "./MovieCard.css";
 import StarRatingComponent from "react-star-rating-component";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({ el }) => {
  
@@ -33,6 +35,7 @@ const MovieCard = ({ el }) => {
         
         
       />
+ <Link to ={`/description/${el.id}`}><button>see more</button></Link> 
     </Card>
   );
 };
